@@ -103,10 +103,7 @@
                     {% endwith %}
                 </tr>
                     <td>
-                        <div class="frame-audio" >
-                            <!-- Линка на музло тут -->
-                            <source src="{% static song.song_link %}" type="audio/mpeg">
-                        </div>
+
                     </td>
                 <tr>
                 </tr>
@@ -117,6 +114,9 @@
                 </tr>
             </tbody>
         </table>
+        <audio id="music" preload="true">
+                            <source src="{% static song.song_link %}">
+                        </audio>
     {% endfor %}
 
 </main>
