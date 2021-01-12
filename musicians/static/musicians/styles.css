@@ -8,6 +8,7 @@ body1 {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   background: #060b21;
+  width: 40vw;
 }
 
 * {
