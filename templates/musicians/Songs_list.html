@@ -103,23 +103,22 @@
                             </div>
                         </div>
                     </td>
-
                 </tr>
+                <tr>
+                    <td>{{ Song.description }}</td>
+                </tr>
+                <tr>
                     <td>
-
+                        <audio controls id="music{{ song.Song_id }}" preload="true">
+                            <source src="{% static song_l %}" type="audio/mpeg">
+                        </audio>
                     </td>
-                <tr>
-                </tr>
-                <tr>
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: center">Длительность {{song.duration}}</td>
                 </tr>
             </tbody>
         </table>
-        <audio controls id="music{{ song.Song_id }}" preload="true">
-            <source src="{% static song_l %}" type="audio/mpeg">
-        </audio>
     {% endwith %}
     {% endwith %}
     {% endfor %}
