@@ -25,7 +25,7 @@
 	</style>
 </head>
 <body>
-<main class="bg-warning">
+<main class="bg-warning" style="overflow-x: scroll">
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid modal-header">
 			<a class="navbar-brand" ><b>Songs</b></a>
@@ -62,7 +62,7 @@
                                     <div id="carouselExampleControls{{ song.Song_id }}" class="carousel slide" data-ride="carousel" data-interval="false" >
                                         <div class="carousel-inner ">
                                             <div class="carousel-item active text-center constant-size text-center" >
-                                                <img  src="{% static image %}" class="rounded img-fluid mx-auto " style="max-width: 40vw; height:auto" alt="slide">
+                                                <img  src="{% static image %}" class="rounded img-fluid mx-auto " style="max-width: 40vw; height:40vh; width: auto" alt="slide">
                                             </div>
                                             <div class="carousel-item constant-size">
                                                 <div class="body1">
