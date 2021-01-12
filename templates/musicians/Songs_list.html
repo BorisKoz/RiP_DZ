@@ -20,7 +20,7 @@
 		overflow-x: hidden;
 		}
     .songwidth {
-        width:70%
+        width:100%
     }
 	</style>
 </head>
@@ -53,8 +53,8 @@
                     <td class="text-center" rowspan="3">
                         <div class="songwidth align-content-center text-center">
                             <div class="d-flex flex-row">
-                                <div id="carouselExampleControls{{ song.Song_id }}" class="carousel slide" data-ride="carousel" data-interval="false" >
-                                    <div class="carousel-inner p-2 order-2">
+                                <div id="carouselExampleControls{{ song.Song_id }} p-2 order-2" class="carousel slide" data-ride="carousel" data-interval="false" >
+                                    <div class="carousel-inner ">
                                         <div class="carousel-item active text-center">
                                             <img  src="{% static image %}" class="rounded img-fluid" style="max-width: 100%; height: auto" alt="slide">
                                         </div>
@@ -96,7 +96,6 @@
                     </td>
                     {% endwith %}
                 </tr>
-                    <td></td>
                     <td>
                         <div class="frame-audio" >
                             <!-- Линка на музло тут -->

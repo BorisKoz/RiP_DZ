@@ -45,10 +45,10 @@ body1 {
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 .frame-header .info .title {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .frame-header .info .subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 0.25em;
 }
 .frame-lyrics {
