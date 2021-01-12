@@ -65,3 +65,9 @@ body {
 background: -webkit-linear-gradient(to right, #2d3032, #ffdd3c);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2d3032, #ffdd3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.constant-size {
+  max-height: 40vh;
+  width: 40vw;
+  height: auto;
+}
