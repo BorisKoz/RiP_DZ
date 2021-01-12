@@ -20,6 +20,7 @@
 	</style>
 </head>
 <body>
+<div class="contentpage">
     <main class="bg-warning">
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid modal-header">
@@ -30,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
+						    <a class="nav-link active" aria-current="page" href="{%url 'report'%}">отчет</a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +40,11 @@
     </main>
         {% for musician in musicians %}
             <div class="bkz3 {{ musician.Musician_id }}">
-                <a style="text-decoration: none; " href="{%url 'songs_list' musician.Musician_id%}"><font face="Arial">{{musician.Musician_name}}</font> </a>
+                <a style="text-decoration: none; color: #ffffff" href="{%url 'songs_list' musician.Musician_id%}"><font face="Arial">{{musician.Musician_name}}</font> </a>
             </div>
         {%endfor%}
+</div>
+<div class="stickyfoot">
+    <p class="container-fluid text-center">By Kozhuro B.E</p>
+</div>
 </body>

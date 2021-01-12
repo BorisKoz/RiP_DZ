@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.contentpage {
+  flex: 1 0 auto;
+}
+.stickyfoot {
+  flex-shrink: 0;
+}
+
 .modal-open .modal, .btn:focus {
     outline: none !important;
 }
