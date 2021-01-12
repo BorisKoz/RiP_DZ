@@ -51,47 +51,47 @@
 
                     {% with 'musicians/'|add:song.img as image %}
                     <td class="text-center" rowspan="3">
-                        <div class="songwidth align-content-center text-center" style="position: relative">
-                            <div id="carouselExampleControls{{ song.Song_id }}" class="carousel slide" data-ride="carousel" data-interval="false" >
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active text-center">
-                                        <img  src="{% static image %}" class="rounded img-fluid" style="max-width: 100%; height: auto" alt="slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="body1">
-                                            <div class="frame">
-                                                <header class="frame-header">
-                                                    <div class="image">
+                        <div class="songwidth align-content-center text-center">
+                            <div class="d-flex flex-row">
+                                <div id="carouselExampleControls{{ song.Song_id }}" class="carousel slide" data-ride="carousel" data-interval="false" >
+                                    <div class="carousel-inner p-2 order-2">
+                                        <div class="carousel-item active text-center">
+                                            <img  src="{% static image %}" class="rounded img-fluid" style="max-width: 100%; height: auto" alt="slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="body1">
+                                                <div class="frame">
+                                                    <header class="frame-header">
+                                                        <div class="image">
 
-                                                        <img class="album-artwork" src="{% static image %}"/>
+                                                            <img class="album-artwork" src="{% static image %}"/>
+                                                        </div>
+                                                        <div class="info">
+                                                            <div class="title">{{ song.Song_name }}</div>
+                                                            <div class="subtitle">{{ song.duration }}</div>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="frame-lyrics">
+                                                        {{ song.lyrics }}
                                                     </div>
-                                                    <div class="info">
-                                                        <div class="title">{{ song.Song_name }}</div>
-                                                        <div class="subtitle">{{ song.duration }}</div>
+
+                                                    <div class="frame-bg">
+                                                      <img class="bg-color album-artwork" src="{% static image %}"/>
+                                                      <img class="bg-black album-artwork" src="{% static image %}"/>
                                                     </div>
-                                                </header>
-
-
-                                                <div class="frame-lyrics">
-                                                    {{ song.lyrics }}
-                                                </div>
-
-
-                                                <div class="frame-bg">
-                                                  <img class="bg-color album-artwork" src="{% static image %}"/>
-                                                  <img class="bg-black album-artwork" src="{% static image %}"/>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <a class="carousel-control-prev{{ song.Song_id }} p-2 order-1 align-self-cente" href="#carouselExampleControls{{ song.Song_id }}" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next{{ song.Song_id }} p-2 order-3 align-self-cente" href="#carouselExampleControls{{ song.Song_id }}" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
                             </div>
-                            <a class="bkz1 carousel-control-prev{{ song.Song_id }}" href="#carouselExampleControls{{ song.Song_id }}" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </a>
-                            <a class="bkz2 carousel-control-next{{ song.Song_id }}" href="#carouselExampleControls{{ song.Song_id }}" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </a>
                         </div>
                     </td>
                     {% endwith %}
