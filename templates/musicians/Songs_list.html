@@ -48,8 +48,8 @@
                     <td class="align-middle" style="text-align: center" width ="30%"><h2> {{song.Song_name}} </h2></td>
                     {% load static %}
                     {% with 'musicians/'|add:song.img as image %}
-                    <td class="align-right" style="text-align: right; align-content: center" rowspan="2">
-                        <div class="songwidth" style="position: relative">
+                    <td class="text-center" rowspan="2">
+                        <div class="songwidth align-content-center text-center" style="position: relative">
                             <div id="carouselExampleControls{{ song.Song_id }}" class="carousel slide" data-ride="carousel" data-interval="false" >
                                 <div class="carousel-inner">
                                     <div class="carousel-item active text-center">
