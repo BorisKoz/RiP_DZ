@@ -39,7 +39,7 @@
     </main>
         {% for musician in musicians %}
             <div class="bkz3 {{ musician.Musician_id }}">
-                <a href="{%url 'songs_list' musician.Musician_id%}">{{musician.Musician_name}}</a>
+                <a style="text-decoration: none; " href="{%url 'songs_list' musician.Musician_id%}"><font face="Arial">{{musician.Musician_name}}</font> </a>
             </div>
         {%endfor%}
 </body>
