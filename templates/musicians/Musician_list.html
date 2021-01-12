@@ -37,11 +37,9 @@
             </div>
         </nav>
     </main>
-    <ol>
         {% for musician in musicians %}
             <div class="hola {{ musician.Musician_id }}">
-                <li><a href="{%url 'songs_list' musician.Musician_id%}">{{musician.Musician_name}}</a></li>
+                <a href="{%url 'songs_list' musician.Musician_id%}">{{musician.Musician_name}}</a>
             </div>
         {%endfor%}
-    </ol>
 </body>
