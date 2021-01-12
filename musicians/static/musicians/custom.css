@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
 .modal-open .modal, .btn:focus {
     outline: none !important;
 }
@@ -31,4 +35,19 @@
   position: absolute;
   top: 50%;
   right: 0
+}
+
+.bkz3 {
+  font-family: 'poppins', serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 12px;
+  color: white;
+  display: block;
+  box-shadow: 4px 4px 8px rgba(100,100,150,.5);
+  background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2d3032, #ffdd3c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2d3032, #ffdd3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
