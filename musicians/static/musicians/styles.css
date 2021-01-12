@@ -56,7 +56,7 @@ body1 {
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 40vh;
-  max-width: 100%;
+  max-width: 40vw;
   white-space: pre-wrap;
   line-height: 30px;
   text-align: center;
