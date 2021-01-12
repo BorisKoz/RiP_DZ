@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Musician(models.Model):
-    Musician_id = models.AutoField(primary_key=True)
+    Musician_id = models.AutoField(primary_key=True, verbose_name="ID музыканта")
     Musician_name = models.CharField(max_length=100)
     Site = models.CharField(max_length=200)
 
