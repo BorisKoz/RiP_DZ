@@ -16,5 +16,8 @@ class Song(models.Model):
     Song_name = models.CharField(max_length=100)
     duration = models.CharField(max_length=50)
     img = models.CharField(max_length=100)
+    lyrics = models.CharField(max_length=3000, default='текст песни')
+    song_link = models.CharField(max_length=200, default='ссылка на mp3')
+
 
 

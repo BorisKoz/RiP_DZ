@@ -4,7 +4,7 @@
  
 .modal.dark { background-color: #2d3032; }
 .modal.dark .modal-body {
-  background: #40464b;
+  background: #40463b;
 }
  
 .modal.dark .modal-header {
@@ -19,4 +19,16 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+.bkz1 {
+  position: absolute;
+  top:50%;
+  left: 0
+}
+
+.bkz2 {
+  position: absolute;
+  top: 50%;
+  right: 0
 }

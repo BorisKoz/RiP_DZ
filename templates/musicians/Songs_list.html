@@ -18,6 +18,9 @@
 	footer{
 		overflow-x: hidden;
 		}
+    .songwidth {
+        width:70%
+    }
 	</style>
 </head>
 <body>
@@ -42,11 +45,29 @@
     {% for song in songs %}
         <table class="table table-dark table-borderless" id="VC-table">
             <tbody>
-
-                    <td class="align-bottom" style="text-align: center" width="50%"><h1> {{song.Song_name}} </h1></td>
+                    <td class="align-bottom" style="text-align: center" width ="30%"><h2> {{song.Song_name}} </h2></td>
                     {% load static %}
                     {% with 'musicians/'|add:song.img as image %}
-                    <td class="align-right" style="text-align: right" rowspan="2"><img src="{% static image %}" class="rounded img-fluid" style="max-width: 100%; height: 400px" ></td>
+                    <td class="align-right" style="text-align: right" rowspan="2">
+                        <div class="songwidth" style="position: relative">
+                            <div id="carouselExampleControls{{ song.Song_id }}" class="carousel slide" data-ride="carousel" data-interval="false" >
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img  src="{% static image %}" class="rounded img-fluid" style="max-width: 100%; height: auto" alt="slide">
+                                    </div>
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="bkz1 carousel-control-prev{{ song.Song_id }}" href="#carouselExampleControls{{ song.Song_id }}" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="bkz2 carousel-control-next{{ song.Song_id }}" href="#carouselExampleControls{{ song.Song_id }}" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </td>
                     {% endwith %}
                 </tr>
                 <tr>
