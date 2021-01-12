@@ -114,9 +114,9 @@
                 </tr>
             </tbody>
         </table>
-        <audio id="music{{ song.Song_id }}" preload="true">
-                            <source src="{% static song.song_link %}">
-                        </audio>
+        <audio controls id="music{{ song.Song_id }}" preload="true">
+            <source src="{% static song.song_link %}" type="audio/mpeg">
+        </audio>
     {% endfor %}
 
 </main>
