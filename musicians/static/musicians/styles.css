@@ -1,13 +1,11 @@
 html,
 body {
   min-height: 100vh;
+
 }
 
-html {
-  font-size: 62.5%;
-}
 
-body {
+body1 {
   margin: 0;
   display: flex;
   align-items: center;
@@ -57,14 +55,15 @@ body {
   position: relative;
   z-index: 10;
   flex-grow: 1;
-  padding: 2rem;
+  padding: 1em;
   padding-top: 0;
-  font-size: 2rem;
+  font-size: 1em;
   overflow-y: scroll;
+  overflow-x: hidden;
   max-height: 70vh;
   max-width: 500px;
   white-space: pre-wrap;
-  line-height: 70px;
+  line-height: 30px;
   text-align: center;
 }
 .frame-lyrics > div {

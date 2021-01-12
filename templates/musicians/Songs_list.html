@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset "UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Кожуро Б.Е. ИУ5-55Б</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -58,38 +58,31 @@
                                         <img  src="{% static image %}" class="rounded img-fluid" style="max-width: 100%; height: auto" alt="slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="frame">
-                                            <header class="frame-header">
-                                                <div class="image">
-                                                    <!-- Линка на имагу -->
-                                                    <img class="album-artwork" src="{% static image %}"/>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="title">Название</div>
-                                                    <div class="subtitle">Длительность</div>
-                                                </div>
-                                            </header>
+                                        <div class="body1">
+                                            <div class="frame">
+                                                <header class="frame-header">
+                                                    <div class="image">
+                                                        
+                                                        <img class="album-artwork" src="{% static image %}"/>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="title">{{ song.Song_name }}</div>
+                                                        <div class="subtitle">{{ song.duration }}</div>
+                                                    </div>
+                                                </header>
 
-                                            <!-- Тут с в цикле можешь на каждые 50 символов отрезать и пихать в див -->
-                                            <div class="frame-lyrics">
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                                съешь же ещё этих мягких французских булок, да выпей чаю
-                                            </div>
 
-                                            <!-- Линка на фон это обложка альбома -->
-                                            <div class="frame-bg">
-                                              <img class="bg-color album-artwork" src="{% static image %}"/>
-                                              <img class="bg-black album-artwork" src="{% static image %}"/>
+                                                <div class="frame-lyrics">
+                                                    {{ song.lyrics }}
+                                                </div>
+
+
+                                                <div class="frame-bg">
+                                                  <img class="bg-color album-artwork" src="{% static image %}"/>
+                                                  <img class="bg-black album-artwork" src="{% static image %}"/>
+                                                </div>
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
